@@ -10,7 +10,10 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import { Laptop, Book, Globe, Instagram, Linkedin, Mail } from "lucide-react";
+import { Instagram } from "lucide-react";
+
+const whatsappUrl =
+  "https://web.whatsapp.com/send?autoload=1&app_absent=0&utm_source=ig&phone=5513991598181&text";
 
 export default function App() {
   return (
@@ -55,9 +58,9 @@ export default function App() {
 
       {/* CTA Button */}
       <div className="z-10 mb-10 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-        <button className="btn-primary">
+        <a className="btn-primary inline-flex" href={whatsappUrl} target="_blank" rel="noopener noreferrer">
           Fale Conosco no WhatsApp
-        </button>
+        </a>
       </div>
 
       {/* Footer Section */}
